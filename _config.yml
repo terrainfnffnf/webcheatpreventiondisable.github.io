@@ -1,3 +1,14 @@
 theme: jekyll-theme-minimal
 title: The site to block cheats
 description: Please paste the URL or link at the textbox bellow by using ctrl+V, right-click then press "Paste" or command+V in order to exploit the site you want to exploit.
+
+lsi: false
+safe: true
+source: [your repo's top level directory]
+incremental: false
+highlighter: rouge
+gist:
+  noscript: false
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
