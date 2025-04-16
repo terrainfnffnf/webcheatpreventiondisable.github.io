@@ -1,0 +1,19 @@
+curl -O http://example.com/index.html
+
+
+import requests
+
+# URL of the HTML file you want to download
+url = 'https://example.com/index.html'
+
+# Send a GET request to the URL
+response = requests.get(url)
+
+# Check if the request was successful
+if response.status_code == 200:
+    # Save the content to a local file
+    with open('index.html', 'wb') as file:
+        file.write(response.content)
+    print('File downloaded successfully.')
+else:
+    print(f'Failed to download file. Status code: {response.status_code}')
